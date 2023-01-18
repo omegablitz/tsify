@@ -623,7 +623,7 @@ impl Display for TsType {
             }
 
             TsType::Array(elem) => {
-                write!(f, "{elem}[]")
+                write!(f, "({elem})[]")
             }
 
             TsType::Tuple(elems) => {
